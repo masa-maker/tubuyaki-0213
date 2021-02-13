@@ -2,9 +2,11 @@
   <div class="balloon3-left">
   Tubuyaki
   </div>
+  <div class= "option">
   <%= link_to "Go NewPost", new_list_path, class: "btn_design" %>
   <%= link_to "Go Talk Room", new_message_path, class: "btn_design" %>
   <%= link_to "Go TopPage", root_path, class: "btn_design" %>
+  </div>
   <div class="balloons">
     <% @lists.each do |list|%>
     <div class="balloon1" >
