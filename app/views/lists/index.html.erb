@@ -1,0 +1,22 @@
+<div class="container" id="randomImg">
+  <div class="balloon3-left">
+  Tubuyaki
+  </div>
+  <%= link_to "Go NewPost", new_list_path, class: "btn_design" %>
+  <%= link_to "Go Talk Room", new_message_path, class: "btn_design" %>
+  <%= link_to "Go TopPage", root_path, class: "btn_design" %>
+  <div class="balloons">
+    <% @lists.each do |list|%>
+    <div class="balloon1" >
+    <div class="icon"><i class="far fa-user-circle fa-4x" style= "color: #ffcc75;"></i> </div>
+      <% list.tags.each do |tag|%>
+        <h5 class="card-title">#<%= tag.name %></h5>
+      <% end %>
+        <br>
+        <p class="card-text"><%= list.info%></p>
+        <%= link_to "Edit", edit_list_path(list), class: "btn btn-light" %>
+        <%= link_to "Delete", list_path(list), method: :delete ,class: "btn btn-light" %>
+    </div>
+    <% end %>
+  </div>
+</div>

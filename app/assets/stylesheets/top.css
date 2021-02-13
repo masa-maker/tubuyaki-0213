@@ -1,0 +1,25 @@
+.full {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("/tubuyaki.jpeg")
+  center / cover;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.h1 {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 0.5em);
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  font-size: 8vw; 
+}
+
+

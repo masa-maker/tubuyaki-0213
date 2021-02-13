@@ -1,0 +1,22 @@
+<div class="container" id="randomImg">
+  <div class="balloon3-left">
+  Tubuyaki
+  </div>
+  <%= link_to "Go Tubuyaki_List", lists_path, class: "btn_design" %>
+  <%= form_with model: @list, url: list_path, local: true do |f|%>
+  <%= render 'shared/error_messages', model: f.object %>
+      <form>
+        <div class="form-group">
+          <%= f.label :info, "Info" %>
+          <%= f.text_field :info, class:"form-control", placeholder: "Enter Info"%>
+          <small id="emailHelp" class="form-text text-muted">You share information.</small>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :name, "Tag" %>
+          <%= f.text_field :name, class:"form-control", placeholder: "Enter Tag"%>
+          <small id="search" class="form-text text-muted"></small>
+        </div>
+        <%= f.submit "Edit" ,class: "btn btn-warning" %>
+      </form>
+  <% end %>

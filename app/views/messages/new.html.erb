@@ -1,0 +1,20 @@
+<div class="container" id="randomImg">
+  <div class="balloon3-left">
+  Tubuyaki
+  </div>
+  <%= link_to "Go Tubuyaki_List", lists_path, class: "btn_design" %>
+  <%= form_with model: @message do |f| %>
+    <div class="form-group">
+      <%= f.text_field :text, class:"form-control", placeholder: "Enter Info"%>
+      <small id="emailHelp" class="form-text text-muted">You share tubuyaki.</small>
+    </div>
+    <%= f.submit "push" ,class: "btn btn-warning" %>
+  <% end %>
+  <div class="messages">
+  <% @messages.reverse_each do |message| %>
+    <div class="message" id='messages'>
+        <p><%= message.text %></p>
+    </div>
+  <% end %>
+  </div>
+</div>
