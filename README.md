@@ -10,6 +10,12 @@
 Javascriptを用いての機能実装を身に着ける為。<br>
 Formオブジェクトを用いて「Tag機能」の編集、更新の実装の練習の為。
 
+# 機能一覧
+- 投稿機能
+- 検索機能（Ajax）
+- タグ付機能(Formオブジェクト)
+- チャットルーム機能(Action Cable)
+
 # アプリケーションURL
 https://tubuyaki-0213.herokuapp.com/
 
