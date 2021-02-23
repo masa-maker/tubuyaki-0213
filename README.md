@@ -15,6 +15,7 @@ Formオブジェクトを用いて「Tag機能」の編集、更新の実装の�
 - 検索機能（Ajax）
 - タグ付機能(Formオブジェクト)
 - チャットルーム機能(Action Cable)
+- 画像プレビュー機能
 
 # アプリケーションURL
 https://tubuyaki-0213.herokuapp.com/
@@ -45,6 +46,10 @@ Pass  4649464
 ### Javascriptの「action cable」を用いてチャット機能実装
 
 ![actioncable](https://user-images.githubusercontent.com/76035698/107866395-c0eeaa00-6eb3-11eb-9c98-f876ce52e833.gif)
+
+### Javascriptを用いて「画像プレビュー機能」
+
+![prev](https://user-images.githubusercontent.com/76035698/108831335-50f7c680-760d-11eb-80f8-654d584e7497.gif)
 
 # ER図
 
