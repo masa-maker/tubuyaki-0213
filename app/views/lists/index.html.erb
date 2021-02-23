@@ -15,6 +15,7 @@
         <h5 class="card-title">#<%= tag.name %></h5>
       <% end %>
         <br>
+        <%= image_tag list.image, class: "image-size" %>
         <p class="card-text"><%= list.info%></p>
         <%= link_to "Edit", edit_list_path(list), class: "btn btn-light" %>
         <%= link_to "Delete", list_path(list), method: :delete ,class: "btn btn-light" %>
